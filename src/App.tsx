@@ -4,7 +4,7 @@ import { Footer, Header, Home } from './components';
 
 function App() {
   return (
-    <Flex direction="column" align="center" justify="center">
+    <Flex direction="column" align="center" justify="center" className="px-8">
       <Header />
       <Home />
       <Footer />

@@ -5,6 +5,11 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "typeRoots": [
+			"./types",
+			"./node_modules/@types/",
+      "./node_modules/@types/mdx",
+		],
     "paths": {
       "@/*": ["./src/*"]
     }

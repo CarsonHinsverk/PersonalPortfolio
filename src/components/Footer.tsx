@@ -1,9 +1,9 @@
-import { Flex, Section, Separator, Text } from "@radix-ui/themes";
+import { Button, Flex, Section, Separator, Text } from "@radix-ui/themes";
 import LinkButtons from "./LinkButtons";
 
 export default function Footer() {
     return (
-        <Flex direction={"column"} className="w-full px-8">
+        <Flex direction={"column"} className="w-full">
             <Section size={"1"}>
                 <Flex direction={"row"} align={"center"} justify={"between"}>
                     <Text>
@@ -23,9 +23,16 @@ export default function Footer() {
                     </Text>
 
                     <a href="/">
-                        <Text>
-                            Return To Top
-                        </Text>
+                        <Button variant={"ghost"} color={"gray"}>
+                            <Text weight={"medium"}
+                                className="inline-block bg-linear-to-r from-purple-600 from-50%
+                                via-purple-600 via-50% to-slate-800 to-50% bg-size-[200%_100%]
+                                bg-clip-text text-transparent bg-position-[100%_0] transition-[background-position]
+                                duration-500 ease-in-out hover:bg-position-[0_0] cursor-pointer"
+                            >
+                                Return to Top
+                            </Text>
+                        </Button>
                     </a>
                 </Flex>
             </Section>

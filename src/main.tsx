@@ -8,7 +8,7 @@ import '@radix-ui/themes/styles.css';
 createRoot(document.getElementById('root')!).render(
   <html lang="en">
     <body>
-      <Theme 
+      <Theme
         appearance={"light"}
         radius={"full"}
       >

@@ -1,22 +1,26 @@
 import { Button, Flex } from "@radix-ui/themes";
 import { fileTextIcon, githubLogo, linkedinLogo } from "../assets";
 
-import "../index.css";
-
 export default function LinkButtons() {
     return (
         <Flex gap={"2"} align={"center"} justify={"between"}>
-            <Button variant={"outline"}>
-                <img src={githubLogo} /> GitHub
-            </Button>
+            <a href="https://github.com/CarsonHinsverk">
+                <Button variant={"classic"} color={"purple"}>
+                    <img src={githubLogo} /> GitHub
+                </Button>
+            </a>
 
-            <Button variant={"outline"}>
-                <img src={linkedinLogo} /> LinkedIn
-            </Button>
+            <a href="https://www.linkedin.com/in/carson-hinsverk-3345093b1/">
+                <Button variant={"classic"} color={"purple"}>
+                    <img src={linkedinLogo} /> LinkedIn
+                </Button>
+            </a>
 
-            <Button variant={"outline"}>
-                <img src={fileTextIcon} /> Resume
-            </Button>
+            <a href="https://docs.google.com/document/d/1ulB6rGRe-RjlFXpExGTYIBvfHqikTYnypJDUfu2z5lg/edit?usp=sharing">
+                <Button variant={"classic"} color={"purple"}>
+                    <img src={fileTextIcon} /> Resume
+                </Button>
+            </a>
         </Flex>
     );
 }
