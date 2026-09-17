@@ -1,0 +1,1832 @@
+[
+  {
+    "type": "type",
+    "name": "sanity.imageAsset.reference",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_ref": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          }
+        },
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "reference"
+          }
+        },
+        "_weak": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
+        }
+      },
+      "dereferencesTo": "sanity.imageAsset"
+    }
+  },
+  {
+    "name": "project",
+    "type": "document",
+    "attributes": {
+      "_id": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_type": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string",
+          "value": "project"
+        }
+      },
+      "_createdAt": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_updatedAt": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_rev": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "id": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "title": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "type": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "union",
+          "of": [
+            {
+              "type": "string",
+              "value": "desktop app"
+            },
+            {
+              "type": "string",
+              "value": "web app"
+            },
+            {
+              "type": "string",
+              "value": "mobile app"
+            },
+            {
+              "type": "string",
+              "value": "cross-device app"
+            },
+            {
+              "type": "string",
+              "value": "machine learning"
+            },
+            {
+              "type": "string",
+              "value": "game"
+            },
+            {
+              "type": "string",
+              "value": "cli"
+            },
+            {
+              "type": "string",
+              "value": "api"
+            },
+            {
+              "type": "string",
+              "value": "compiler"
+            },
+            {
+              "type": "string",
+              "value": "graphics"
+            },
+            {
+              "type": "string",
+              "value": "security"
+            },
+            {
+              "type": "string",
+              "value": "network"
+            },
+            {
+              "type": "string",
+              "value": "hardware"
+            },
+            {
+              "type": "string",
+              "value": "robotics"
+            }
+          ]
+        },
+        "optional": true
+      },
+      "blurb": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "description": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "longDescription": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "stage": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "union",
+          "of": [
+            {
+              "type": "string",
+              "value": "dev"
+            },
+            {
+              "type": "string",
+              "value": "released"
+            },
+            {
+              "type": "string",
+              "value": "deprecated"
+            }
+          ]
+        },
+        "optional": true
+      },
+      "techStack": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "array",
+          "of": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "airflow"
+              },
+              {
+                "type": "string",
+                "value": "airtable"
+              },
+              {
+                "type": "string",
+                "value": "angular"
+              },
+              {
+                "type": "string",
+                "value": "ansible"
+              },
+              {
+                "type": "string",
+                "value": "anthropic"
+              },
+              {
+                "type": "string",
+                "value": "astro"
+              },
+              {
+                "type": "string",
+                "value": "babel"
+              },
+              {
+                "type": "string",
+                "value": "blazor"
+              },
+              {
+                "type": "string",
+                "value": "bootstrap"
+              },
+              {
+                "type": "string",
+                "value": "bun"
+              },
+              {
+                "type": "string",
+                "value": "c"
+              },
+              {
+                "type": "string",
+                "value": "c#"
+              },
+              {
+                "type": "string",
+                "value": "c++"
+              },
+              {
+                "type": "string",
+                "value": "clojure"
+              },
+              {
+                "type": "string",
+                "value": "cloudflare"
+              },
+              {
+                "type": "string",
+                "value": "confluence"
+              },
+              {
+                "type": "string",
+                "value": "dart"
+              },
+              {
+                "type": "string",
+                "value": "databricks"
+              },
+              {
+                "type": "string",
+                "value": "digitalocean"
+              },
+              {
+                "type": "string",
+                "value": "django"
+              },
+              {
+                "type": "string",
+                "value": "docker"
+              },
+              {
+                "type": "string",
+                "value": "elasticsearch"
+              },
+              {
+                "type": "string",
+                "value": "electron"
+              },
+              {
+                "type": "string",
+                "value": "elixir"
+              },
+              {
+                "type": "string",
+                "value": "erlang"
+              },
+              {
+                "type": "string",
+                "value": "excel"
+              },
+              {
+                "type": "string",
+                "value": "expo"
+              },
+              {
+                "type": "string",
+                "value": "express"
+              },
+              {
+                "type": "string",
+                "value": "express.js"
+              },
+              {
+                "type": "string",
+                "value": "fastapi"
+              },
+              {
+                "type": "string",
+                "value": "figma"
+              },
+              {
+                "type": "string",
+                "value": "firebase"
+              },
+              {
+                "type": "string",
+                "value": "flask"
+              },
+              {
+                "type": "string",
+                "value": "flutter"
+              },
+              {
+                "type": "string",
+                "value": "framer"
+              },
+              {
+                "type": "string",
+                "value": "gatsby"
+              },
+              {
+                "type": "string",
+                "value": "gcp"
+              },
+              {
+                "type": "string",
+                "value": "git"
+              },
+              {
+                "type": "string",
+                "value": "github"
+              },
+              {
+                "type": "string",
+                "value": "gitlab"
+              },
+              {
+                "type": "string",
+                "value": "go"
+              },
+              {
+                "type": "string",
+                "value": "graphql"
+              },
+              {
+                "type": "string",
+                "value": "hadoop"
+              },
+              {
+                "type": "string",
+                "value": "haskell"
+              },
+              {
+                "type": "string",
+                "value": "hasura"
+              },
+              {
+                "type": "string",
+                "value": "hugging face"
+              },
+              {
+                "type": "string",
+                "value": "java"
+              },
+              {
+                "type": "string",
+                "value": "javascript"
+              },
+              {
+                "type": "string",
+                "value": "jenkins"
+              },
+              {
+                "type": "string",
+                "value": "jest"
+              },
+              {
+                "type": "string",
+                "value": "jira"
+              },
+              {
+                "type": "string",
+                "value": "jquery"
+              },
+              {
+                "type": "string",
+                "value": "jupyter"
+              },
+              {
+                "type": "string",
+                "value": "kafka"
+              },
+              {
+                "type": "string",
+                "value": "kotlin"
+              },
+              {
+                "type": "string",
+                "value": "kubernetes"
+              },
+              {
+                "type": "string",
+                "value": "langchain"
+              },
+              {
+                "type": "string",
+                "value": "laravel"
+              },
+              {
+                "type": "string",
+                "value": "linear"
+              },
+              {
+                "type": "string",
+                "value": "linux"
+              },
+              {
+                "type": "string",
+                "value": "mariadb"
+              },
+              {
+                "type": "string",
+                "value": "material ui"
+              },
+              {
+                "type": "string",
+                "value": "mongodb"
+              },
+              {
+                "type": "string",
+                "value": "mui"
+              },
+              {
+                "type": "string",
+                "value": "mysql"
+              },
+              {
+                "type": "string",
+                "value": "neovim"
+              },
+              {
+                "type": "string",
+                "value": "nestjs"
+              },
+              {
+                "type": "string",
+                "value": "netlify"
+              },
+              {
+                "type": "string",
+                "value": "next.js"
+              },
+              {
+                "type": "string",
+                "value": "nextjs"
+              },
+              {
+                "type": "string",
+                "value": "nginx"
+              },
+              {
+                "type": "string",
+                "value": "node.js"
+              },
+              {
+                "type": "string",
+                "value": "nodejs"
+              },
+              {
+                "type": "string",
+                "value": "notion"
+              },
+              {
+                "type": "string",
+                "value": "numpy"
+              },
+              {
+                "type": "string",
+                "value": "openjdk"
+              },
+              {
+                "type": "string",
+                "value": "pandas"
+              },
+              {
+                "type": "string",
+                "value": "perplexity"
+              },
+              {
+                "type": "string",
+                "value": "php"
+              },
+              {
+                "type": "string",
+                "value": "postgresql"
+              },
+              {
+                "type": "string",
+                "value": "postman"
+              },
+              {
+                "type": "string",
+                "value": "prisma"
+              },
+              {
+                "type": "string",
+                "value": "python"
+              },
+              {
+                "type": "string",
+                "value": "pytorch"
+              },
+              {
+                "type": "string",
+                "value": "r"
+              },
+              {
+                "type": "string",
+                "value": "rabbitmq"
+              },
+              {
+                "type": "string",
+                "value": "react"
+              },
+              {
+                "type": "string",
+                "value": "react native"
+              },
+              {
+                "type": "string",
+                "value": "react router"
+              },
+              {
+                "type": "string",
+                "value": "react.js"
+              },
+              {
+                "type": "string",
+                "value": "reactjs"
+              },
+              {
+                "type": "string",
+                "value": "redis"
+              },
+              {
+                "type": "string",
+                "value": "redux"
+              },
+              {
+                "type": "string",
+                "value": "remix"
+              },
+              {
+                "type": "string",
+                "value": "rstudio"
+              },
+              {
+                "type": "string",
+                "value": "ruby"
+              },
+              {
+                "type": "string",
+                "value": "ruby on rails"
+              },
+              {
+                "type": "string",
+                "value": "rust"
+              },
+              {
+                "type": "string",
+                "value": "sanity"
+              },
+              {
+                "type": "string",
+                "value": "sass"
+              },
+              {
+                "type": "string",
+                "value": "scala"
+              },
+              {
+                "type": "string",
+                "value": "shadcn"
+              },
+              {
+                "type": "string",
+                "value": "shopify"
+              },
+              {
+                "type": "string",
+                "value": "sklearn"
+              },
+              {
+                "type": "string",
+                "value": "snowflake"
+              },
+              {
+                "type": "string",
+                "value": "socket.io"
+              },
+              {
+                "type": "string",
+                "value": "spark"
+              },
+              {
+                "type": "string",
+                "value": "springboot"
+              },
+              {
+                "type": "string",
+                "value": "sql"
+              },
+              {
+                "type": "string",
+                "value": "sqlite"
+              },
+              {
+                "type": "string",
+                "value": "storybook"
+              },
+              {
+                "type": "string",
+                "value": "supabase"
+              },
+              {
+                "type": "string",
+                "value": "svelte"
+              },
+              {
+                "type": "string",
+                "value": "swift"
+              },
+              {
+                "type": "string",
+                "value": "tailwind"
+              },
+              {
+                "type": "string",
+                "value": "tailwind css"
+              },
+              {
+                "type": "string",
+                "value": "tailwindcss"
+              },
+              {
+                "type": "string",
+                "value": "tensorflow"
+              },
+              {
+                "type": "string",
+                "value": "terraform"
+              },
+              {
+                "type": "string",
+                "value": "three.js"
+              },
+              {
+                "type": "string",
+                "value": "trello"
+              },
+              {
+                "type": "string",
+                "value": "typescript"
+              },
+              {
+                "type": "string",
+                "value": "ubuntu"
+              },
+              {
+                "type": "string",
+                "value": "unity"
+              },
+              {
+                "type": "string",
+                "value": "unreal engine"
+              },
+              {
+                "type": "string",
+                "value": "vercel"
+              },
+              {
+                "type": "string",
+                "value": "vim"
+              },
+              {
+                "type": "string",
+                "value": "vite"
+              },
+              {
+                "type": "string",
+                "value": "vitest"
+              },
+              {
+                "type": "string",
+                "value": "vue"
+              },
+              {
+                "type": "string",
+                "value": "vue.js"
+              },
+              {
+                "type": "string",
+                "value": "vuejs"
+              },
+              {
+                "type": "string",
+                "value": "webflow"
+              },
+              {
+                "type": "string",
+                "value": "webpack"
+              },
+              {
+                "type": "string",
+                "value": "wordpress"
+              },
+              {
+                "type": "string",
+                "value": "xcode"
+              }
+            ]
+          }
+        },
+        "optional": true
+      },
+      "experience": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "union",
+          "of": [
+            {
+              "type": "string",
+              "value": "ai-4-earth"
+            },
+            {
+              "type": "string",
+              "value": "comdel-internship"
+            }
+          ]
+        },
+        "optional": true
+      },
+      "links": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "object",
+          "attributes": {
+            "web": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "string"
+              },
+              "optional": true
+            },
+            "ios": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "string"
+              },
+              "optional": true
+            },
+            "android": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "string"
+              },
+              "optional": true
+            },
+            "other": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "string"
+              },
+              "optional": true
+            }
+          }
+        },
+        "optional": true
+      },
+      "github": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "startDate": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "releaseDate": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "deprecationDate": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "logo": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "object",
+          "attributes": {
+            "asset": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "inline",
+                "name": "sanity.imageAsset.reference"
+              },
+              "optional": true
+            },
+            "media": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "unknown"
+              },
+              "optional": true
+            },
+            "hotspot": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "inline",
+                "name": "sanity.imageHotspot"
+              },
+              "optional": true
+            },
+            "crop": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "inline",
+                "name": "sanity.imageCrop"
+              },
+              "optional": true
+            },
+            "_type": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "string",
+                "value": "image"
+              }
+            }
+          }
+        },
+        "optional": true
+      },
+      "img": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "object",
+          "attributes": {
+            "asset": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "inline",
+                "name": "sanity.imageAsset.reference"
+              },
+              "optional": true
+            },
+            "media": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "unknown"
+              },
+              "optional": true
+            },
+            "hotspot": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "inline",
+                "name": "sanity.imageHotspot"
+              },
+              "optional": true
+            },
+            "crop": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "inline",
+                "name": "sanity.imageCrop"
+              },
+              "optional": true
+            },
+            "_type": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "string",
+                "value": "image"
+              }
+            }
+          }
+        },
+        "optional": true
+      }
+    }
+  },
+  {
+    "name": "sanity.imageCrop",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "sanity.imageCrop"
+          }
+        },
+        "top": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "bottom": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "left": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "right": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        }
+      }
+    }
+  },
+  {
+    "name": "sanity.imageHotspot",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "sanity.imageHotspot"
+          }
+        },
+        "x": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "y": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "height": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "width": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        }
+      }
+    }
+  },
+  {
+    "name": "experience",
+    "type": "document",
+    "attributes": {
+      "_id": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_type": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string",
+          "value": "experience"
+        }
+      },
+      "_createdAt": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_updatedAt": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_rev": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "id": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "title": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "position": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "type": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "union",
+          "of": [
+            {
+              "type": "string",
+              "value": "college"
+            },
+            {
+              "type": "string",
+              "value": "research"
+            },
+            {
+              "type": "string",
+              "value": "work"
+            },
+            {
+              "type": "string",
+              "value": "volunteer"
+            }
+          ]
+        },
+        "optional": true
+      },
+      "blurb": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "description": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "longDescription": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "status": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "union",
+          "of": [
+            {
+              "type": "string",
+              "value": "current"
+            },
+            {
+              "type": "string",
+              "value": "former"
+            }
+          ]
+        },
+        "optional": true
+      },
+      "projects": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "array",
+          "of": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "pack-tracker"
+              },
+              {
+                "type": "string",
+                "value": "pps-kitting-shipments"
+              },
+              {
+                "type": "string",
+                "value": "personal-portfolio"
+              },
+              {
+                "type": "string",
+                "value": "statt"
+              }
+            ]
+          }
+        },
+        "optional": true
+      },
+      "startDate": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "endDate": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "logo": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "object",
+          "attributes": {
+            "asset": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "inline",
+                "name": "sanity.imageAsset.reference"
+              },
+              "optional": true
+            },
+            "media": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "unknown"
+              },
+              "optional": true
+            },
+            "hotspot": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "inline",
+                "name": "sanity.imageHotspot"
+              },
+              "optional": true
+            },
+            "crop": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "inline",
+                "name": "sanity.imageCrop"
+              },
+              "optional": true
+            },
+            "_type": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "string",
+                "value": "image"
+              }
+            }
+          }
+        },
+        "optional": true
+      }
+    }
+  },
+  {
+    "name": "sanity.imagePaletteSwatch",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "sanity.imagePaletteSwatch"
+          }
+        },
+        "background": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "foreground": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "population": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "title": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        }
+      }
+    }
+  },
+  {
+    "name": "sanity.imagePalette",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "sanity.imagePalette"
+          }
+        },
+        "darkMuted": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imagePaletteSwatch"
+          },
+          "optional": true
+        },
+        "lightVibrant": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imagePaletteSwatch"
+          },
+          "optional": true
+        },
+        "darkVibrant": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imagePaletteSwatch"
+          },
+          "optional": true
+        },
+        "vibrant": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imagePaletteSwatch"
+          },
+          "optional": true
+        },
+        "dominant": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imagePaletteSwatch"
+          },
+          "optional": true
+        },
+        "lightMuted": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imagePaletteSwatch"
+          },
+          "optional": true
+        },
+        "muted": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imagePaletteSwatch"
+          },
+          "optional": true
+        }
+      }
+    }
+  },
+  {
+    "name": "sanity.imageDimensions",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "sanity.imageDimensions"
+          }
+        },
+        "height": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "width": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "aspectRatio": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        }
+      }
+    }
+  },
+  {
+    "name": "sanity.imageMetadata",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "sanity.imageMetadata"
+          }
+        },
+        "location": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "geopoint"
+          },
+          "optional": true
+        },
+        "dimensions": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imageDimensions"
+          },
+          "optional": true
+        },
+        "palette": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "sanity.imagePalette"
+          },
+          "optional": true
+        },
+        "lqip": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "blurHash": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "thumbHash": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "hasAlpha": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
+        },
+        "isOpaque": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
+        }
+      }
+    }
+  },
+  {
+    "name": "sanity.fileAsset",
+    "type": "document",
+    "attributes": {
+      "_id": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_type": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string",
+          "value": "sanity.fileAsset"
+        }
+      },
+      "_createdAt": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_updatedAt": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_rev": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "originalFilename": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "label": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "title": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "description": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "altText": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "sha1hash": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "extension": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "mimeType": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "size": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "number"
+        },
+        "optional": true
+      },
+      "assetId": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "uploadId": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "path": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "url": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "source": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "sanity.assetSourceData"
+        },
+        "optional": true
+      }
+    }
+  },
+  {
+    "name": "sanity.assetSourceData",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "sanity.assetSourceData"
+          }
+        },
+        "name": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "id": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "url": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        }
+      }
+    }
+  },
+  {
+    "name": "sanity.imageAsset",
+    "type": "document",
+    "attributes": {
+      "_id": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_type": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string",
+          "value": "sanity.imageAsset"
+        }
+      },
+      "_createdAt": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_updatedAt": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_rev": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "originalFilename": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "label": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "title": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "description": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "altText": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "sha1hash": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "extension": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "mimeType": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "size": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "number"
+        },
+        "optional": true
+      },
+      "assetId": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "uploadId": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "path": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "url": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "metadata": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "sanity.imageMetadata"
+        },
+        "optional": true
+      },
+      "source": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "sanity.assetSourceData"
+        },
+        "optional": true
+      }
+    }
+  },
+  {
+    "name": "geopoint",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "geopoint"
+          }
+        },
+        "lat": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "lng": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        },
+        "alt": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "number"
+          },
+          "optional": true
+        }
+      }
+    }
+  },
+  {
+    "name": "slug",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "slug"
+          }
+        },
+        "current": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        },
+        "source": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": true
+        }
+      }
+    }
+  }
+]

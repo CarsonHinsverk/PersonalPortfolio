@@ -71,5 +71,6 @@ export default defineConfig([
     },
   },
 ])
-
 ```
+
+TODO: Store recurring data elsewhere so new projects being added requires minimal actual code.
