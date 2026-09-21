@@ -29,7 +29,6 @@ export default function RootLayout({
       <body
         style={{
           width: '100vw',
-          overflow: 'hidden',
         }}
         className={`${_outfit.variable} ${_atkinson.variable} font-sans antialiased`}
       >
