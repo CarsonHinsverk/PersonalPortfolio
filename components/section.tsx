@@ -25,16 +25,16 @@ export default function Section({ heading, children }: SectionProps) {
       <Flex direction={"column"}>
         <Flex align={"center"} justify={"center"} style={{ backgroundColor: '#1F2123' }} className="w-full h-full p-4">
           <Text
-            size={"9"} weight={"bold"}
+            size={"7"} weight={"bold"}
             style={{ color: isHover ? '#8145B5' : 'white' }}
-            className="transition-color duration-200"
+            className="transition-color duration-200 text-center"
           >
             {heading}
           </Text>
         </Flex>
 
-        <Flex className="p-8">
-        {children}
+        <Flex className="p-4">
+          {children}
         </Flex>
       </Flex>
     </motion.div>

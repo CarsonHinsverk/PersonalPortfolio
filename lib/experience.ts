@@ -16,7 +16,7 @@ export type ExperienceProfile = {
   projects: string[];
   startDate: string;
   endDate: string;
-  logo?: Object,
+  logo?: string,
 };
 
 const normalizeExperienceType = (

@@ -4,15 +4,15 @@ import HeroSection from '@/components/home/hero-section';
 import AboutSection from '@/components/home/about-section';
 import SkillsSection from '@/components/home/skills-section';
 import ExperiencesSection from '@/components/home/experiences-section';
+import ProjectsSection from '@/components/home/projects-section';
 import ContactSection from '@/components/home/contact-section';
-import Section from '@/components/home/section';
+import Section from '@/components/section';
 
 import { client } from '@/sanity/lib/client';
 import { EXPERIENCES_QUERY, PROJECTS_QUERY } from '@/sanity/lib/queries';
 import { EXPERIENCES_QUERY_RESULT, PROJECTS_QUERY_RESULT } from '@/sanity/types';
 import { mapExperience } from '@/lib/experience';
 import { mapProject } from '@/lib/project';
-import ProjectsSection from '@/components/home/projects-section';
 
 export default async function Home() {
   const [projectsData, experiencesData] = await Promise.all([
@@ -29,7 +29,7 @@ export default async function Home() {
     : [];
 
   return (
-    <main className="relative w-full justify-items-center-safe">
+    <main className="relative w-full min-h-screen justify-items-center-safe">
       <Flex gap={"8"} align={"center"} direction={"column"} className="relative max-w-200 w-full h-full p-8">
         <HeroSection />
         <Section heading={"About Me"}>

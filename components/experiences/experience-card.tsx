@@ -25,13 +25,13 @@ export function ExperienceCard({ experience }: { experience: ExperienceProfile }
   return (
     <Card size={"1"} className="w-full h-full">
       <Flex gap={"4"} direction={"column"} className="w-full h-full p-4">
-        <Flex gap={"8"} align={"center"} justify={"between"}>
-          <Text>// {experience.type}</Text>
+        <Flex gap={"2"} align={"center"} justify={"between"}>
+          <Text className="text-start">// {experience.type}</Text>
 
-          <Text>{timeRange}</Text>
+          <Text className="text-end">{timeRange}</Text>
         </Flex>
 
-        <Text weight={"bold"} className="text-3xl">
+        <Text size={"6"} weight={"bold"}>
           {experience.title}
         </Text>
 

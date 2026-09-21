@@ -1,4 +1,4 @@
-import Section from "@/components/home/section";
+import Section from "@/components/section";
 import { parseDate } from "@/components/utils";
 import { client } from "@/sanity/lib/client";
 import { EXPERIENCE_BY_IDENTIFIER_QUERY_RESULT } from "@/sanity/types";
@@ -71,8 +71,8 @@ export default async function ExperienceProfilePage({ params }: ExperiencePagePr
   const experience = mapExperience(experienceData as EXPERIENCE_BY_IDENTIFIER_QUERY_RESULT);
 
   return (
-    <main className="relative w-full justify-items-center-safe">
-      <Flex gap={"8"} align={"center"} direction={"column"} className="relative max-w-200 w-full h-full p-8">
+    <main className="relative w-full min-h-screen justify-items-center-safe">
+      <Flex gap={"4"} align={"center"} direction={"column"} className="relative max-w-200 w-full h-full p-8">
           {experience ? (
             <>
               <Flex direction={"column"} gap={"4"}>
@@ -123,14 +123,14 @@ export default async function ExperienceProfilePage({ params }: ExperiencePagePr
               <Section heading={"Project Details"}>
                 <Flex gap={"2"} direction={"row"}>
                   <Flex className="flex-1">
-                    <Text size={"5"} className="w-full">
+                    <Text size={"3"} className="w-full">
                       {experience.longDescription}
                     </Text>
                   </Flex>
 
                   <Separator orientation={"vertical"} size={"4"} />
 
-                  <Flex direction={"column"} gap={"2"} style={{ width: "fit-content" }}>
+                  <Flex direction={"column"} gap={"2"} style={{ width: "30%"  }}>
                     <Text size={"3"}>Timeline:</Text>
 
                     {formatTimeline(experience).map((timelineDate, index) => {

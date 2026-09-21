@@ -34,10 +34,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </Link>
             </Flex>
 
-            <Text
-              weight={"bold"}
-              className="text-3xl"
-            >
+            <Text size={"6"} weight={"bold"} wrap={"wrap"}>
               {project.title}
             </Text>
           </Flex>
@@ -48,7 +45,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </Text>
 
         <Flex gap={"2"} wrap={"wrap"}>
-          {project.techStack.map((tech, index) => (
+          {project.techStack.slice(0,4).map((tech, index) => (
             <div
               key={index}
               className="px-2 rounded-2xl"

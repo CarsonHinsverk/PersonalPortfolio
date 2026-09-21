@@ -1,4 +1,4 @@
-import Section from "@/components/home/section";
+import Section from "@/components/section";
 import { parseDate } from "@/components/utils";
 import { mapProject, ProjectProfile } from "@/lib/project";
 import { client } from "@/sanity/lib/client";
@@ -105,12 +105,12 @@ export default async function ProjectProfilePage({ params }: ProjectPageProps) {
   const project = mapProject(projectData as PROJECT_BY_IDENTIFIER_QUERY_RESULT);
 
   return (
-    <main className="relative w-full justify-items-center-safe">
-      <Flex gap={"8"} align={"center"} direction={"column"} className="relative max-w-200 w-full h-full p-8">
+    <main className="relative w-full min-h-screen justify-items-center-safe">
+      <Flex gap={"4"} align={"center"} direction={"column"} className="relative max-w-200 w-full h-full p-8">
           {project ? (
             <>
               <Flex direction={"column"} gap={"4"}>
-                <Flex align={"center"} justify={"between"} className="w-full">
+                <Flex gap={"4"} align={"center"} justify={"between"} className="w-full">
                   <Text>// {project.type}</Text>
 
                   {project.github ? (
@@ -122,7 +122,7 @@ export default async function ProjectProfilePage({ params }: ProjectPageProps) {
                     </Link>
                   ) : (
                     <Flex gap={"2"} align={"center"} style={{ color: "#B54545" }}>
-                      <Text size={"6"}>GitHub Unavailable</Text>
+                      <Text size={"6"} className="text-end">GitHub Unavailable</Text>
                       <GitHubLogoIcon />
                     </Flex>
                   )}
@@ -176,14 +176,14 @@ export default async function ProjectProfilePage({ params }: ProjectPageProps) {
               <Section heading={"Project Details"}>
                 <Flex gap={"2"} direction={"row"}>
                   <Flex className="flex-1">
-                    <Text size={"5"} className="w-full">
+                    <Text size={"3"} className="w-full">
                       {project.longDescription}
                     </Text>
                   </Flex>
 
                   <Separator orientation={"vertical"} size={"4"} />
 
-                  <Flex direction={"column"} gap={"2"} style={{ width: "fit-content" }}>
+                  <Flex direction={"column"} gap={"2"} style={{ width: "30%" }}>
                     <Text size={"3"}>Timeline:</Text>
 
                     {formatTimeline(project).map((timelineDate, index) => {
@@ -227,6 +227,10 @@ export default async function ProjectProfilePage({ params }: ProjectPageProps) {
                     })()}
 
                     <Separator orientation={"horizontal"} size={"4"} />
+
+                    {
+                    // TODO: Check first whether there's an associated experience
+                    }
 
                     <Text size={"3"}>Associated<br />Experience:</Text>
 

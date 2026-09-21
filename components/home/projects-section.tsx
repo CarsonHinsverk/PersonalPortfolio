@@ -11,7 +11,7 @@ export type ProjectsProps = {
 
 export default function ProjectsSection({ projects }: ProjectsProps) {
   return (
-    <Flex direction={"column"} gap={"8"}>
+    <Flex direction={"column"} gap={"4"}>
       <Text size={"5"} className="w-full text-center" style={{ color: "#9873B7" }}>
         Constantly exploring new fields of Computer Science and Software Engineering through unique projects.
         <br /><br />

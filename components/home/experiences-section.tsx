@@ -8,6 +8,8 @@ type ExperiencesProps = {
   experiences: (ExperienceProfile | null)[]
 }
 
+// TODO: Add some sort of limit to the number of experiences that can be displayed on the homepage
+
 export default function ExperiencesSection({ experiences }: ExperiencesProps) {
   const sortedExperiences = experiences.sort((a, b) => {
     if (a && b) {

@@ -7,6 +7,8 @@
  * https://github.com/sanity-io/next-sanity
  */
 
+// TODO: Add images for projects and experiences
+
 import { NextStudio } from 'next-sanity/studio'
 import config from '../../../sanity.config'
 

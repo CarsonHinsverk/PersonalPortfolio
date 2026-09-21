@@ -1,6 +1,6 @@
 
 import ExperienceSection from "@/components/experiences/experience-section";
-import Section from "@/components/home/section";
+import Section from "@/components/section";
 
 import { mapExperience } from "@/lib/experience";
 import { client } from "@/sanity/lib/client";
@@ -16,7 +16,7 @@ export default async function ExperiencesPage() {
     : [];
 
   return (
-    <main className="relative w-full justify-items-center-safe">
+    <main className="relative w-full min-h-screen justify-items-center-safe">
       <Flex gap={"8"} align={"center"} direction={"column"} className="relative max-w-200 w-full h-full p-8">
         {experiences
           .filter(experience => experience != null)

@@ -2,6 +2,8 @@ import React from "react";
 import '@/app/globals.css';
 import { Metadata } from "next/types";
 
+// TODO: Implement metadata for the website
+
 // export const metadata: Metadata = {
 //   title: 'Carson Hinsverk | CHinsDev',
 //   description: 'Hello. My name is Carson, a computer science student at the University of Minnesota. Come see what I do.',

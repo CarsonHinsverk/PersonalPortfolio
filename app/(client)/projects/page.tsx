@@ -1,6 +1,6 @@
 
 import ProjectSection from "@/components/projects/project-section";
-import Section from "@/components/home/section";
+import Section from "@/components/section";
 import { mapProject } from "@/lib/project";
 import { client } from "@/sanity/lib/client";
 import { PROJECTS_QUERY } from "@/sanity/lib/queries";
@@ -15,7 +15,7 @@ export default async function ProjectsPage() {
     : [];
 
   return (
-    <main className="relative w-full justify-items-center-safe">
+    <main className="relative w-full min-h-screen justify-items-center-safe">
       <Flex gap={"8"} align={"center"} direction={"column"} className="relative max-w-200 w-full h-full p-8">
         {projects
           .filter(project => project != null)
